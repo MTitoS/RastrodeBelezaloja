@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+.container {
+  padding: 0;
+  font-size: 1.5rem;
+  font-family: Montserrat, sans-serif;
+}
+
+.topnav {
+  margin: 2.4rem 0 -3rem 0;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5rem;
+}
+
+.topnav a {
+  padding: 0 1.4rem;
+  font-size: 1.7rem;
+}
+
+.topnav button {
+  height: 3.3rem;
+  border: none;
+  border-radius: 10px;
+  margin: 0 1rem 0 1rem;
+  background-color: #fff;
+  transition: background-color 0.2s;
+}
+
+.topnav button:hover {
+  background-color: #f0f0f0;
+  border-bottom: 0.2rem solid #30303a;
+}
+
+.topnav img {
+  height: 4rem;
+  margin-left: 8rem;
+}
+
+.headerContainer {
+  border-top: 0.3rem solid #f0d6af;
+  background-color: #fee5d3;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  padding-left: 10rem;
+  height: 70vh;
+  width: 92.6vw;
+  box-shadow: 0 0.1rem rgba(0, 0, 0, 0.082);
+}
+
+.headerContainer h1 {
+  padding-top: 15px;
+}
+
+.headerContainer p {
+  margin-left: 3rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.headerContainer img {
+  margin-right: 3rem;
+}
+
+/*
+
+---------------------------------------------------
+
+MEDIA QUERY EM ANDAMENTO, NÃO ESTÁ FUNCIONANDO 100%
+
+---------------------------------------------------
+
+*/
+
+@media only screen and (max-width: 440px) {
+  .headerContainer img {
+    display: none;
+  }
+  .headerContainer {
+    width: 117vw;
+    height: 40vh;
+  }
+}
+
+@media only screen and (min-width: 440px) {
+  .headerContainer img {
+    height: 10rem;
+  }
+  .headerContainer {
+    width: 100%;
+    height: 50vh;
+  }
+}
+
+@media only screen and (min-width: 455px) {
+  .headerContainer img {
+    height: 15rem;
+  }
+
+  .headerContainer {
+    width: 92.6vw;
+    height: 60vh;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .headerContainer img {
+    height: 22rem;
+  }
+
+  .headerContainer {
+    width: 92.6vw;
+    height: 60vh;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .headerContainer img {
+    height: 50rem;
+  }
+
+  .headerContainer {
+    width: 92.6vw;
+    height: 70vh;
+  }
+}
+
+/*
+
+---------------------
+
+        FIM 
+
+---------------------
+
+*/
+
+.cards {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 5rem;
+  margin-bottom: 8rem;
+  flex-wrap: wrap;
+}
+
+.firstCard,
+.secondCard,
+.thirdCard {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 2rem;
+  width: 33rem;
+  height: 38rem;
+  background-color: #eab488;
+  border-radius: 10px;
+  padding: 1rem 1rem 1rem 1rem;
+  box-shadow: 0.7rem 0.7rem 0.7rem rgb(136, 136, 136);
+}
+
+.cards img {
+  margin-top: 4rem;
+  width: 100px;
+  height: 100px;
+}
+
+.cards h3 {
+  font-size: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+
+.container h2 {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.products img {
+  background-color: #c77965;
+  border-radius: 90rem;
+  height: 20rem;
+}
+
+.products img:hover {
+  opacity: 0.5;
+}
+
+.bestSelling {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.bestSelling div {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 2rem;
+  width: 30rem;
+  height: 38rem;
+  background-color: #eab488;
+  border-radius: 10px;
+  padding: 1rem 1rem 1rem 1rem;
+  box-shadow: 0.7rem 0.7rem 0.7rem rgb(136, 136, 136);
+}
+
+.bestSelling div:hover {
+  opacity: 0.5;
+}
+
+.bestSelling p {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.bestSelling img {
+  height: 34rem;
+}
+
+.footer {
+  margin-top: 10rem;
+  display: flex;
+  height: 25vh;
+  background-color: #36363a;
+  border-top: 0.7rem solid rgb(41, 41, 44);
+  color: white;
+}
+
+.footLeft {
+  display: flex;
+  align-items: center;
+  background-color: #36363a;
+  font-size: 1.4rem;
+  margin-left: 6rem;
+  width: 40vw;
+}
+
+.footMid {
+  display: flex;
+  flex-flow: column;
+  background-color: #30303a;
+  margin-left: 10rem;
+  width: 30vw;
+  padding-left: 5rem;
+  border-left: 0.7rem solid rgb(55, 55, 58);
+}
+
+.footRight {
+  display: flex;
+  flex-flow: column;
+  background-color: #30303a;
+  width: 30vw;
+}
